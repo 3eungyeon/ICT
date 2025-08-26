@@ -1,0 +1,65 @@
+.ifb-wrap{ max-width: 920px; margin: 40px auto 80px; padding: 0 20px; }
+.ifb-title{ font-size: 36px; font-weight: 900; text-align:center; margin: 0 0 8px; }
+.ifb-meta{ text-align:center; color: var(--muted); margin: 0 0 18px; }
+
+/* 채팅 영역 */
+.ifb-chat{
+  background:#fff; border:1px solid var(--line); border-radius: var(--radius);
+  padding: 24px; min-height: 320px; box-shadow: var(--shadow);
+}
+.row{ display:flex; gap:14px; align-items:flex-start; margin: 18px 0; }
+.row.system .avatar{ visibility:hidden; }
+.avatar{
+  width:40px; height:40px; display:flex; align-items:center; justify-content:center;
+  background:#f3f4f6; border-radius: 10px; font-size: 20px;
+}
+.bubble{
+  flex:1; padding: 18px; border-radius: 12px; border:1px solid #e8ecf2;
+  background: #eef2ff; /* 연한 파랑 카드 */
+}
+.bubble.system{ background:#132c8a; color:#fff; border-color:#132c8a; } /* 중앙 진한 블루 바 */
+
+/* 변형 버튼 (연녹 포인트) */
+.ifb-variant{
+  display:block; margin: 18px auto 14px; height: 40px; padding: 0 16px;
+  background:#fff; color:#16a34a; border:1px solid #bbf7d0; border-radius:10px;
+  font-weight:700; cursor:pointer;
+}
+
+/* 입력 바 */
+.ifb-inputbar{
+  display:flex; gap:10px; align-items:center;
+  background:#fff; border:1px solid var(--line); border-radius: 999px;
+  padding: 8px 10px; height: 54px; box-shadow: var(--shadow);
+  margin-top: 8px;
+}
+.ifb-inputbar input{
+  flex:1; height: 38px; border:0; outline:none; padding: 0 8px; color: var(--text);
+}
+.ifb-inputbar button{
+  width:44px; height:44px; border-radius:50%; border:0; background:#111827; color:#fff; cursor:pointer;
+}
+.ifb-inputbar button:hover{ opacity:.9; }
+
+/* 로딩/에러 */
+.ifb-skel{ color: var(--muted); }
+.ifb-error{ margin: 10px 0 0; color: #dc2626; font-size: 14px; }
+
+
+/* 분석 버튼 */
+.ifb-analyze{
+  width:100%;
+  height:46px;
+  margin: 10px 0 14px;
+  border:0;
+  border-radius:10px;
+  background: var(--primary);
+  color:#fff;
+  font-weight:700;
+  box-shadow: var(--shadow);
+  cursor:pointer;
+  transition: background .2s ease, transform .02s ease;
+}
+.ifb-analyze:hover{ background: var(--primary-600); }
+.ifb-analyze:active{ transform: translateY(1px); }
+.ifb-analyze[disabled]{ opacity:.6; cursor:not-allowed; }

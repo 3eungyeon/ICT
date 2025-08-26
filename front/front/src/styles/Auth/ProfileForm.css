@@ -1,0 +1,119 @@
+/* ProfileForm 레이아웃 */
+.profile-wrap {
+  max-width: 480px;
+  margin: 72px auto;
+  padding: 0 20px;
+}
+.profile-title {
+  font-size: 26px;
+  font-weight: 800;
+  margin: 0 0 18px;
+}
+.profile-form {
+  display: grid;
+  gap: 14px;
+  background: var(--card);
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.profile-form label {
+  font-size: 13px;
+  color: var(--muted);
+}
+.profile-form input,
+.profile-form select {
+  height: 42px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  outline: none;
+}
+.profile-form input:focus,
+.profile-form select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* 기술스택 row */
+.tech-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.btn-add {
+  width: auto;
+  height: 42px;
+  padding: 0 14px;
+  background: var(--primary);
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: background 0.2s ease, transform 0.02s ease;
+}
+.btn-add:hover {
+  background: var(--primary-600);
+}
+.btn-add:active {
+  transform: translateY(1px);
+}
+
+/* 기술스택 칩 */
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: #f1f5f9;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--text);
+}
+.chip-remove {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--danger);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+}
+.chip-remove:hover {
+  opacity: 0.8;
+}
+
+/* 제출 버튼 */
+.btn-submit {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  background: var(--primary);
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.02s ease, background 0.2s ease;
+  box-shadow: var(--shadow);
+}
+.btn-submit:hover {
+  background: var(--primary-600);
+}
+.btn-submit:active {
+  transform: translateY(1px);
+}

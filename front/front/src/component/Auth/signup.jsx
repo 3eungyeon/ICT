@@ -91,7 +91,8 @@ export default function Signup() {
     if (hasError) return;
 
     // TODO: 회원가입 API 연결
-    navigate("/auth/login");
+   navigate("/auth/profile", { replace: true });
+  
   };
 
   // 에러 노출 조건: (이미 만졌으면) touched[field] === true 이거나, 제출 후(submitted)
